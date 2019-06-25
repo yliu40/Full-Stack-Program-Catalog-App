@@ -1,0 +1,141 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: rgb(252, 252, 252);
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	color: rgb(11, 0, 105);
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 18px;
+	color: rgb(218, 110, 22);
+	line-height: 23px;
+}
+
+h3-left {
+	font-size: 18px;
+	color: rgb(218, 110, 22);
+	line-height: 23px;
+	text-align: left;
+	float: left;
+}
+
+h3-right {
+	font-size: 18px;
+	color: rgb(184, 182, 180);
+	line-height: 23px;
+	text-align: right;
+	float: right;
+}
+
+hr {
+	clear:both;
+}
+
+.top-catalog {
+	height: 80px;
+	background-color: rgb(11, 0, 105);
+	margin: 0;
+	padding: 0;
+}
+
+.button-log {
+	background-color: rgb(218, 110, 22);
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	margin: 0;
+	padding:10px;
+}
+
+.vl {
+	border-left: 2px dotted grey;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 30%;
+	padding: 0;
+	height: 450px; /* Should be removed. Only for demonstration */
+}
+
+.flash {
+	background-color: rgb(102, 183, 236);
+	width:100%;
+	text-decoration: none;
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+}
+
+p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: rgb(0, 0, 0);
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+ strong {
+	font-size: 16px;
+	color: rgb(0, 0, 0);
+	line-height: 24px;
+}
+
+ .btn {
+	padding: 5px;
+	margin-top: 10px;
+	border-color:  rgb(218, 110, 22);
+	border-width: 2px;
+	color:  rgb(218, 110, 22);
+}
+.btn:hover {
+	border-color:  rgb(218, 110, 22);
+}
+
+a {
+ 	font-size: 14px;
+ 	color: #0093B9;
+ 	line-height: 17px;
+ }
+.padding-top {
+	padding-top: 30px;
+}
+.padding-bottom {
+	padding-bottom: 30px;
+}
+.margin-right {
+	margin-right: 30px;
+}
+.padding-none {
+	padding: 0;
+}
+.padding-15 {
+	padding: 15px;
+}
+
+.glyphicon {
+	margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		/* Create two equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 10px;
+		  height: 300px; /* Should be removed. Only for demonstration */
+		}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+</style>
+
+<div class="container">
+<div class="row">
+	<div class="column">
+	<h2>Categories</h2>
+	{% for c in catalogs %}
+		<h3>{{c.name}}</h3>
+	{% endfor %}
+	</div>
+
+	<div class="column">
+	<h2>{{catalog}} Items</h2>
+	{% if items !=[] %}	
+		{% for item in items %}
+
+			{% for c in catalogs %}
+				{% if c.id == item.catalog_id %}
+					<a href = "{{url_for('showItemDescription', catalog_name = c.name, item_name = item.name)}}">
+						<h3>{{item.name}}</h3>
+					</a>
+				{% endif %}
+				{% endfor %}
+
+		{% endfor %}
+	{% endif %}
+	</div>
+</div>
+</div>
+
+
+{% endblock %}

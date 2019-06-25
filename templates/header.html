@@ -1,0 +1,17 @@
+<div class="row top-catalog">
+	<div class="col-md-11">
+		<h>Catalog App</h>>
+	</div>
+		
+	<div class="col-md-1 padding-15" >
+		{% if not session['access_token'] %}
+			<a href = "{{url_for('showLogin')}}">
+		   		<button class="button-log">Signin</button>
+		    </a>
+		{%else%}
+			<a href = "{{url_for('showLogout')}}">
+				<button class="button-log">Logout</button>
+		    </a>
+		{%endif%}
+	</div>	    
+</div>
